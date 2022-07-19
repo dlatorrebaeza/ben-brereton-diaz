@@ -1,0 +1,1314 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  overflow-x: auto;
+  background-color: lightgrey;
+  background-image: url(../imagenes/Ben\ Brereton\ FHD.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  grid-area: header;
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0%;
+  border: solid orange 1px;
+  position: fixed;
+}
+
+.header__img {
+  padding: 1px;
+  display: inline;
+}
+
+.header__ul {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1, 4;
+}
+
+.header__ul--li {
+  display: inline-block;
+  padding: 32px 32px 0px 32px;
+  margin: 6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__ul--oculto {
+  display: none;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.card {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 32px 32px 32px 32px;
+  margin: 0px 50px 0px 60px;
+  border: 1px solid orange;
+  overflow: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
+
+.card__imagen {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-self: center;
+}
+
+.card__titulo {
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.card__parrafo {
+  text-align: justify;
+  font-size: 18px;
+  color: whitesmoke;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flexbiografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: auto;
+  height: 50px;
+  padding: 2px 2px 25px 2px;
+  margin: 0px 32px 32px 32px;
+  border: 1px solid orange;
+  overflow: hidden;
+  border-radius: 10px;
+  position: static;
+}
+
+.tarjeta__titulo {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10%;
+  text-transform: uppercase;
+}
+
+.biografia {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 32px 32px 32px 32px;
+  margin: 0px 32px 32px 32px;
+  border: 1px solid orange;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: static;
+  text-align: center;
+}
+
+.biografia__titulo {
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.biografia__subtitulo {
+  color: white;
+  text-align: justify;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 27px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.biografia__parrafo {
+  text-align: justify;
+  font-size: 20px;
+  color: whitesmoke;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+
+.biografia__imagen {
+  width: 40%;
+  /* height: 200px; */
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid orange;
+}
+
+.clubes {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 32px 32px 32px 32px;
+  margin: 0px 32px 32px 32px;
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: static;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #333;
+  font-size: 1.1rem;
+}
+
+.table {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: 40%;
+  height: 500px;
+  padding: 32px 32px 32px 32px;
+  margin: 0px 50px 40px 40px;
+  border: 1px solid orange;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px;
+  position: static;
+}
+
+.table__subtitulo {
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  margin-bottom: 36px;
+  text-transform: capitalize;
+  border: 1px solid black;
+}
+
+.table__parrafo {
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.galeria {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: 50%;
+  height: 50%;
+  padding: 32px 32px 32px 32px;
+  margin: 0px 40px 0px 60px;
+  border: 1px solid orange;
+  overflow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: static;
+  text-align: center;
+}
+
+.galeria__subtitulo {
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.galeria__video {
+  justify-content: center;
+  align-content: center;
+}
+
+.galeria__imagen {
+  width: 49%;
+  height: 50%;
+  border-radius: 10px;
+  border: 1px solid orange;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.contacto {
+  background-color: rgba(134, 56, 56, 0.9);
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 0px 32px 32px 32px;
+  margin: 0px 50px 50px 60px;
+  border: 1px solid orange;
+  border-radius: 10px;
+  overflow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  position: static;
+}
+
+.contacto__titulo {
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.contacto__subtitulo {
+  color: white;
+  text-align: justify;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 32px 0px 0px 0px;
+  font-size: 27px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.contacto__parrafo {
+  text-align: justify;
+  font-size: 20px;
+  color: whitesmoke;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 32px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 4px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  width: 300px;
+  padding: 4px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  width: 300px;
+  padding: 4px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 6px;
+  color: black;
+  font-size: 20px;
+  position: sticky;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+input[type="radio"] {
+  width: 15px;
+  padding: 4px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.radio {
+  padding-bottom: 5px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0%;
+  border: solid orange 1px;
+  position: fixed;
+  align-items: center;
+}
+
+.footer__img {
+  padding: 1px;
+  display: inline;
+}
+
+.footer__ul {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1, 4;
+}
+
+.footer__ul--li {
+  display: inline-block;
+  margin: 6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.grid__index {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+}
+
+.menu-mobile-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__ul {
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0 2;
+  }
+
+  .header__ul--li {
+    display: inline-block;
+    padding: 1rem 1rem 0px 1rem;
+    margin: 0px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .header__ul--oculto {
+    display: none;
+  }
+
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 90px;
+  }
+
+  .card {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 20px 10px 20px 10px;
+    margin: 5px 10px 5px 10px;
+    border: 1px solid orange;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: static;
+  }
+
+  .card__imagen {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card__titulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 33px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .card__parrafo {
+    text-align: justify;
+    font-size: 18px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .tarjeta {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: 30px;
+    padding: 2px 2px 30px 2px;
+    margin: 0px 32px 32px 32px;
+    border: 1px solid orange;
+    overflow: hidden;
+    border-radius: 10px;
+    position: static;
+  }
+
+  .tarjeta__titulo {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+  }
+
+  .biografia {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  .biografia__titulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .biografia__subtitulo {
+    color: white;
+    text-align: justify;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .biografia__parrafo {
+    text-align: justify;
+    font-size: 18px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .biografia__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid orange;
+  }
+
+  .clubes {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  th {
+    background-color: #333;
+    font-size: 15px;
+  }
+
+  .table {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: 90%;
+    height: auto;
+    padding: 16px 20px 32px 20px;
+    margin: 5px 10px 20px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  .table__subtitulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    border: 1px solid black;
+  }
+
+  .table__parrafo {
+    text-align: center;
+    font-size: 14px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .galeria {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: 90%;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  .galeria__subtitulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .galeria__video {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .galeria__video--yt {
+    width: 560px;
+    height: 315px;
+  }
+
+  .galeria__imagen {
+    width: 45%;
+    height: 50%;
+    border-radius: 10px;
+    border: 1px solid orange;
+    margin-left: none;
+    margin-bottom: none;
+  }
+
+  .contacto {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 32px 32px 32px;
+    margin: 0px 50px 0px 60px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: static;
+  }
+
+  .contacto__titulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+  }
+
+  .contacto__subtitulo {
+    color: white;
+    text-align: justify;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 32px 0px 0px 0px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  .contacto__parrafo {
+    text-align: justify;
+    font-size: 18px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 32px;
+  }
+
+  input[type="text"] {
+    width: 300px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type="email"] {
+    width: 300px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type="password"] {
+    width: 300px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  button {
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    color: black;
+    font-size: 18px;
+    position: sticky;
+  }
+
+  textarea {
+    vertical-align: top;
+  }
+
+  input[type="radio"] {
+    width: 15px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .radio {
+    padding-bottom: 5px;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0%;
+    border: none;
+    border-top: 1px solid orange;
+    position: fixed;
+    align-items: center;
+  }
+
+  .footer__img {
+    padding: 1px;
+    display: inline;
+  }
+
+  .footer__ul {
+    color: black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1, 2;
+  }
+
+  .footer__ul--li {
+    display: inline-block;
+    margin: 6px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__img {
+    padding: 1px;
+    display: inline;
+  }
+
+  .menu-mobile-icon {
+    display: flex;
+    margin-left: auto;
+    font-size: 2.5rem;
+  }
+
+  .header__ul {
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1, 4;
+  }
+
+  .header__ul--li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 6px;
+    text-transform: uppercase;
+    text-align: justify;
+  }
+
+  .nav {
+    display: none;
+    background-color: aquamarine;
+    border: 1px solid orange;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1000000000;
+    width: 80%;
+    height: 100vh;
+  }
+
+  .nav:target {
+    display: block;
+  }
+
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 120px;
+  }
+
+  .card {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: static;
+  }
+
+  .card__imagen {
+    width: 245px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card__titulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .card__parrafo {
+    text-align: justify;
+    font-size: 13px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .tarjeta {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: 30px;
+    padding: 0px 4px 4px 4px;
+    margin: 0px 32px 32px 32px;
+    border: 1px solid orange;
+    overflow: hidden;
+    border-radius: 10px;
+    position: static;
+  }
+
+  .tarjeta__titulo {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+  }
+
+  .biografia {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  .biografia__titulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .biografia__subtitulo {
+    color: white;
+    text-align: justify;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .biografia__parrafo {
+    text-align: justify;
+    font-size: 14px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .biografia__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid orange;
+  }
+
+  .clubes {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  th {
+    background-color: #333;
+    font-size: 13px;
+  }
+
+  .table {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: 92%;
+    height: auto;
+    padding: 0px 3px 6px 6px;
+    margin: 5px 5px 20px 5px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  .table__subtitulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    border: 1px solid black;
+  }
+
+  .table__parrafo {
+    text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .galeria {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    margin: 5px 10px 5px 15px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }
+
+  .galeria__subtitulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .galeria__video {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .galeria__video--yt {
+    width: 249px;
+    height: 149px;
+  }
+
+  .galeria__imagen {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    border: 1px solid orange;
+    margin-left: none;
+    margin-bottom: none;
+  }
+
+  .contacto {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 1rem 1rem 1rem;
+    margin: 10px 10px 165px 10px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: static;
+  }
+
+  .contacto__titulo {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+  }
+
+  .contacto__subtitulo {
+    color: white;
+    text-align: justify;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px 0px 0px 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  .contacto__parrafo {
+    text-align: justify;
+    font-size: 15px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 32px;
+  }
+
+  input[type="text"] {
+    width: 250px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type="email"] {
+    width: 250px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type="password"] {
+    width: 250px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  button {
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    color: black;
+    font-size: 15px;
+    position: sticky;
+  }
+
+  textarea {
+    vertical-align: top;
+  }
+
+  input[type="radio"] {
+    width: 15px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .radio {
+    padding-bottom: 5px;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    bottom: 0%;
+    border: none;
+    border-top: 1px solid orange;
+    position: static;
+    align-items: center;
+  }
+
+  .footer__img {
+    padding: 1px;
+    display: block;
+  }
+
+  .footer__ul {
+    color: black;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    align-items: center;
+  }
+
+  .footer__ul--li {
+    display: flex;
+    text-transform: uppercase;
+    text-align: justify;
+  }
+}
