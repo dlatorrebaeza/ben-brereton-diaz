@@ -1,0 +1,14 @@
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
+  
+  @keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  

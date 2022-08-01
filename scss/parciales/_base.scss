@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  body {
+    overflow-x: auto;
+    background-color: lightgrey;
+    background-image: url(../imagenes/BenBreretonFHD.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+    
+  a:hover {
+    color: #0a58ca;
+  }

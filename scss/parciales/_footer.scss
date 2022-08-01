@@ -1,0 +1,44 @@
+  .footer {
+    grid-area: footer;
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    border: solid orange 1px;
+    position: fixed;
+    align-items: center;
+
+    &__img {
+      padding: 1px;
+      display: inline;
+    }
+    
+    &__ul {
+      color: black;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 0;
+      line-height: 1, 4;
+    }
+    
+    &__ul--li {
+      display: inline-block;
+      margin: 6px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+    
+  .grid__index {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+  }
+  

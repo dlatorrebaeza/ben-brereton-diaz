@@ -8,7 +8,7 @@
 body {
   overflow-x: auto;
   background-color: lightgrey;
-  background-image: url(../imagenes/Ben\ Brereton\ FHD.jpeg);
+  background-image: url(../imagenes/BenBreretonFHD.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,12 +20,11 @@ a {
   text-decoration: none;
 }
 
-
 a:hover {
   color: #0a58ca;
 }
 
-header {
+.header {
   grid-area: header;
   background-color: aquamarine;
   width: 100%;
@@ -64,6 +63,10 @@ header {
   display: none;
 }
 
+.menu-mobile-icon {
+  display: none;
+}
+
 main {
   grid-area: main;
   display: flex;
@@ -74,8 +77,12 @@ main {
 }
 
 @keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card {
@@ -195,7 +202,6 @@ main {
   margin-bottom: 20px;
   line-height: 1.5;
   text-transform: uppercase;
-  
 }
 
 .biografia__subtitulo {
@@ -290,10 +296,6 @@ td {
   animation-duration: 2s;
 }
 
-.table > :not(:first-child) {
-  border-top: none;
-}
-
 .table__subtitulo {
   color: white;
   text-align: center;
@@ -313,6 +315,10 @@ td {
   font-style: normal;
   font-weight: normal;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table > :not(:first-child) {
+  border-top: none;
 }
 
 .galeria {
@@ -479,10 +485,9 @@ input[type="radio"] {
   width: 15px;
   padding: 4px 20px;
   margin: 8px 0;
-
 }
 
-footer {
+.footer {
   grid-area: footer;
   background-color: aquamarine;
   width: 100%;
@@ -518,24 +523,16 @@ footer {
 
 .grid__index {
   display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 1fr;
   grid-template-columns: 100%;
 }
 
-.menu-mobile-icon {
-  display: none;
-}
-
 @media screen and (max-width: 1023px) {
-  header {
+  .header {
     justify-content: space-between;
     align-items: center;
   }
-
   .header__ul {
     color: black;
     font-size: 16px;
@@ -544,7 +541,6 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 0 2;
   }
-
   .header__ul--li {
     display: inline-block;
     padding: 1rem 1rem 0px 1rem;
@@ -552,11 +548,9 @@ footer {
     text-transform: uppercase;
     text-align: center;
   }
-
   .header__ul--oculto {
     display: none;
   }
-
   main {
     grid-area: main;
     display: flex;
@@ -566,7 +560,6 @@ footer {
     margin-top: 120px;
     margin-bottom: 90px;
   }
-
   .card {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -581,7 +574,6 @@ footer {
     border-radius: 10px;
     position: static;
   }
-
   .card__imagen {
     width: 100%;
     height: auto;
@@ -592,7 +584,6 @@ footer {
     display: flex;
     align-items: center;
   }
-
   .card__titulo {
     color: white;
     text-align: center;
@@ -603,7 +594,6 @@ footer {
     margin-bottom: 24px;
     text-transform: uppercase;
   }
-
   .card__parrafo {
     text-align: justify;
     font-size: 18px;
@@ -612,7 +602,6 @@ footer {
     font-weight: normal;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-
   .tarjeta {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -625,7 +614,6 @@ footer {
     border-radius: 10px;
     position: static;
   }
-
   .tarjeta__titulo {
     color: white;
     text-align: center;
@@ -636,7 +624,6 @@ footer {
     margin-bottom: 0;
     text-transform: uppercase;
   }
-
   .biografia {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -654,7 +641,6 @@ footer {
     position: static;
     text-align: center;
   }
-
   .biografia__titulo {
     color: white;
     text-align: center;
@@ -666,7 +652,6 @@ footer {
     margin-top: 10px;
     text-transform: uppercase;
   }
-
   .biografia__subtitulo {
     color: white;
     text-align: justify;
@@ -677,7 +662,6 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-
   .biografia__parrafo {
     text-align: justify;
     font-size: 18px;
@@ -687,12 +671,10 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 15px;
   }
-
   .biografia__conjunto {
     display: inline-block;
     justify-content: none;
   }
-
   .biografia__imagen {
     width: 100%;
     height: auto;
@@ -700,7 +682,6 @@ footer {
     margin-top: 5px;
     border: 1px solid orange;
   }
-
   .clubes {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -718,18 +699,15 @@ footer {
     position: static;
     text-align: center;
   }
-
   table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
   }
-
   th {
     background-color: #333;
     font-size: 15px;
   }
-
   .table {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -747,7 +725,6 @@ footer {
     position: static;
     text-align: center;
   }
-
   .table__subtitulo {
     color: white;
     text-align: center;
@@ -759,7 +736,6 @@ footer {
     text-transform: capitalize;
     border: 1px solid black;
   }
-
   .table__parrafo {
     text-align: center;
     font-size: 14px;
@@ -768,7 +744,6 @@ footer {
     font-weight: normal;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-
   .galeria {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -786,7 +761,6 @@ footer {
     position: static;
     text-align: center;
   }
-
   .galeria__subtitulo {
     color: white;
     text-align: center;
@@ -798,17 +772,14 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-
   .galeria__video {
     justify-content: center;
     align-content: center;
   }
-
   .galeria__video--yt {
     width: 560px;
     height: 315px;
   }
-
   .galeria__imagen {
     width: 45%;
     height: 50%;
@@ -817,7 +788,6 @@ footer {
     margin-left: none;
     margin-bottom: none;
   }
-
   .contacto {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -834,8 +804,7 @@ footer {
     align-self: center;
     position: static;
   }
-
-  .contacto__titulo {
+  .contacto_titulo {
     color: white;
     text-align: center;
     font-style: normal;
@@ -845,7 +814,6 @@ footer {
     margin-bottom: 36px;
     text-transform: uppercase;
   }
-
   .contacto__subtitulo {
     color: white;
     text-align: justify;
@@ -858,7 +826,6 @@ footer {
     text-transform: uppercase;
     overflow: hidden;
   }
-
   .contacto__parrafo {
     text-align: justify;
     font-size: 18px;
@@ -868,28 +835,24 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0px;
   }
-
   input[type="text"] {
     width: 300px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   input[type="email"] {
     width: 300px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   input[type="password"] {
     width: 300px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   button {
     border: none;
     padding: 8px 16px;
@@ -900,23 +863,19 @@ footer {
     font-size: 18px;
     position: sticky;
   }
-
   textarea {
     vertical-align: top;
   }
-
   input[type="radio"] {
     width: 15px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   .radio {
     padding-bottom: 5px;
   }
-
-  footer {
+  .footer {
     grid-area: footer;
     background-color: aquamarine;
     width: 100%;
@@ -928,12 +887,10 @@ footer {
     position: fixed;
     align-items: center;
   }
-
   .footer__img {
     padding: 1px;
     display: inline;
   }
-
   .footer__ul {
     color: black;
     font-size: 15px;
@@ -942,7 +899,6 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1, 2;
   }
-
   .footer__ul--li {
     display: inline-block;
     margin: 6px;
@@ -952,22 +908,19 @@ footer {
 }
 
 @media screen and (max-width: 599px) {
-  header {
+  .header {
     justify-content: space-between;
     align-items: center;
   }
-
   .header__img {
     padding: 1px;
     display: inline;
   }
-
-  .menu-mobile-icon {
+  .header .menu-mobile-icon {
     display: flex;
     margin-left: auto;
     font-size: 2.5rem;
   }
-
   .header__ul {
     color: black;
     font-size: 20px;
@@ -976,7 +929,6 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1, 4;
   }
-
   .header__ul--li {
     display: flex;
     flex-direction: column;
@@ -985,7 +937,6 @@ footer {
     text-transform: uppercase;
     text-align: justify;
   }
-
   .nav {
     display: none;
     background-color: aquamarine;
@@ -997,11 +948,9 @@ footer {
     width: 80%;
     height: 100vh;
   }
-
   .nav:target {
     display: block;
   }
-
   main {
     grid-area: main;
     display: flex;
@@ -1011,7 +960,6 @@ footer {
     margin-top: 110px;
     margin-bottom: 120px;
   }
-
   .card {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -1026,7 +974,6 @@ footer {
     border-radius: 10px;
     position: static;
   }
-
   .card__imagen {
     width: 100%;
     height: auto;
@@ -1037,7 +984,6 @@ footer {
     display: flex;
     align-items: center;
   }
-
   .card__titulo {
     color: white;
     text-align: center;
@@ -1049,7 +995,6 @@ footer {
     margin-top: 10px;
     text-transform: uppercase;
   }
-
   .card__parrafo {
     text-align: justify;
     font-size: 13px;
@@ -1058,7 +1003,6 @@ footer {
     font-weight: normal;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-
   .tarjeta {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -1071,7 +1015,6 @@ footer {
     border-radius: 10px;
     position: static;
   }
-
   .tarjeta__titulo {
     color: white;
     text-align: center;
@@ -1082,7 +1025,6 @@ footer {
     margin-bottom: 0;
     text-transform: uppercase;
   }
-
   .biografia {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -1100,7 +1042,6 @@ footer {
     position: static;
     text-align: center;
   }
-
   .biografia__titulo {
     color: white;
     text-align: center;
@@ -1112,7 +1053,6 @@ footer {
     margin-top: 10px;
     text-transform: uppercase;
   }
-
   .biografia__subtitulo {
     color: white;
     text-align: justify;
@@ -1123,7 +1063,6 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-
   .biografia__parrafo {
     text-align: justify;
     font-size: 14px;
@@ -1133,7 +1072,6 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 15px;
   }
-
   .biografia__imagen {
     width: 100%;
     height: auto;
@@ -1141,7 +1079,6 @@ footer {
     margin-top: 5px;
     border: 1px solid orange;
   }
-
   .clubes {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -1159,25 +1096,22 @@ footer {
     position: static;
     text-align: center;
   }
-
   table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
   }
-
   th {
     background-color: #333;
     font-size: 13px;
   }
-
   .table {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
     width: 92%;
     height: auto;
     padding: 0px 3px 3px 3px;
-    margin: 5px 10px 5px 15px;;
+    margin: 5px 10px 5px 15px;
     border: 1px solid orange;
     overflow: hidden;
     display: flex;
@@ -1188,7 +1122,6 @@ footer {
     position: static;
     text-align: center;
   }
-
   .table__subtitulo {
     color: white;
     text-align: center;
@@ -1200,7 +1133,6 @@ footer {
     text-transform: capitalize;
     border: 1px solid black;
   }
-
   .table__parrafo {
     text-align: center;
     font-size: 12px;
@@ -1209,7 +1141,6 @@ footer {
     font-weight: normal;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-
   .galeria {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -1227,7 +1158,6 @@ footer {
     position: static;
     text-align: center;
   }
-
   .galeria__subtitulo {
     color: white;
     text-align: center;
@@ -1239,17 +1169,14 @@ footer {
     margin-bottom: 15px;
     text-transform: uppercase;
   }
-
   .galeria__video {
     justify-content: center;
     align-content: center;
   }
-
   .galeria__video--yt {
     width: 249px;
     height: 149px;
   }
-
   .galeria__imagen {
     width: 90%;
     height: 50%;
@@ -1259,7 +1186,6 @@ footer {
     margin-bottom: none;
     position: sticky;
   }
-
   .contacto {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
@@ -1276,7 +1202,6 @@ footer {
     align-self: center;
     position: static;
   }
-
   .contacto__titulo {
     color: white;
     text-align: center;
@@ -1287,7 +1212,6 @@ footer {
     margin-bottom: 36px;
     text-transform: uppercase;
   }
-
   .contacto__subtitulo {
     color: white;
     text-align: justify;
@@ -1300,7 +1224,6 @@ footer {
     text-transform: uppercase;
     overflow: hidden;
   }
-
   .contacto__parrafo {
     text-align: justify;
     font-size: 15px;
@@ -1310,28 +1233,24 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0;
   }
-
   input[type="text"] {
     width: 250px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   input[type="email"] {
     width: 250px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   input[type="password"] {
     width: 250px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   button {
     border: none;
     padding: 8px 16px;
@@ -1340,25 +1259,21 @@ footer {
     border-radius: 6px;
     color: black;
     font-size: 15px;
-    position:inherit;
+    position: inherit;
   }
-
   textarea {
     vertical-align: top;
   }
-
   input[type="radio"] {
     width: 15px;
     padding: 4px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
   .radio {
     padding-bottom: 5px;
   }
-
-  footer {
+  .footer {
     grid-area: footer;
     background-color: aquamarine;
     width: 100%;
@@ -1371,12 +1286,10 @@ footer {
     position: static;
     align-items: center;
   }
-
   .footer__img {
     padding: 1px;
     display: block;
   }
-
   .footer__ul {
     color: black;
     font-size: 10px;
@@ -1386,7 +1299,6 @@ footer {
     line-height: 1;
     align-items: center;
   }
-
   .footer__ul--li {
     display: flex;
     text-transform: uppercase;

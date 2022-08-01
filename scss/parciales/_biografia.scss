@@ -1,0 +1,115 @@
+  .flexbiografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tarjeta {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: 38%;
+    height: auto;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 32px 32px 32px;
+    border: 1px solid orange;
+    overflow: hidden;
+    border-radius: 10px;
+    position: static;
+    animation: fadein;
+    animation-duration: 2s;
+
+    &__titulo {
+      color: white;
+      text-align: center;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0px 2px 6px 2px;
+      line-height: 1.75;
+      text-transform: uppercase;
+    }
+  }
+  
+  .biografia {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 32px 32px 32px 32px;
+    margin: 0px 32px 32px 32px;
+    border: 1px solid orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+
+    &__titulo {
+      color: white;
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    &__subtitulo {
+      color: white;
+      text-align: justify;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 27px;
+      margin-bottom: 36px;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    &__parrafo {
+      text-align: justify;
+      font-size: 20px;
+      color: whitesmoke;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 15px;
+    }
+
+    &__conjunto {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__imagen {
+      width: 48%;
+      /* height: 200px; */
+      border-radius: 10px;
+      margin-top: 10px;
+      border: 1px solid orange;
+    }
+  }
+  
+  .clubes {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 32px 32px 32px 32px;
+    margin: 0px 32px 32px 32px;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+  }

@@ -1,0 +1,117 @@
+ 
+  .contacto {
+    background-color: rgba(134, 56, 56, 0.9);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0px 32px 32px 32px;
+    margin: 0px 50px 50px 60px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: static;
+    animation: fadein;
+    animation-duration: 2s;
+
+    &__titulo {
+      color: white;
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 35px;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+    }
+    
+    &__subtitulo {
+      color: white;
+      text-align: justify;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 32px 0px 0px 0px;
+      font-size: 27px;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      overflow: hidden;
+    }
+    
+    &__parrafo {
+      text-align: justify;
+      font-size: 20px;
+      color: whitesmoke;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 0;
+      margin-top: 0;
+      line-height: 1.3;
+    }
+  }
+  
+  label {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  input[type="text"] {
+    width: 400px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type="email"] {
+    width: 400px;
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type="password"] {
+    width: 400px;
+    padding: 4px 20px;
+    margin: 8px 0;
+  }
+  
+  button {
+    border: none;
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    position: relative;
+  }
+  
+  textarea {
+    vertical-align: top;
+    margin-top: 8px;
+  }
+  
+  .radio {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+
+    &__alternativas {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+    
+  input[type="radio"] {
+    width: 15px;
+    padding: 4px 20px;
+    margin: 8px 0;
+  
+  }

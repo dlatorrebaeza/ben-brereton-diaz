@@ -1,0 +1,44 @@
+  
+  .header {
+    grid-area: header;
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    border: solid orange 1px;
+    position: fixed;
+    z-index: 100000;
+
+    &__img {
+      padding: 1px;
+      display: inline;
+    }
+    
+    &__ul {
+      color: black;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1, 4;
+    }
+    
+    &__ul--li {
+      display: inline-block;
+      padding: 32px 32px 0px 32px;
+      margin: 6px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    
+    &__ul--oculto {
+      display: none;
+    }
+  
+  }
+  
+  .menu-mobile-icon {
+    display: none;
+  }
