@@ -1,22 +1,19 @@
 
-  .galeria {
-    background-color: rgba(134, 56, 56, 0.9);
-    color: white;
-    width: 50%;
-    height: auto;
-    padding: 32px 32px 32px 32px;
-    margin: 0px 20px 0px 20px;
-    border: 1px solid orange;
-    overflow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    animation: fadein;
-    animation-duration: 2s;
+.galeria {
+  color: white;
+  width: 50%;
+  height: auto;
+  border: 1px solid orange;
+  overflow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  animation: fadein;
+  animation-duration: 2s;
 
     &__subtitulo {
       color: white;

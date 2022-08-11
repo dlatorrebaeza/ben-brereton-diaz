@@ -6,7 +6,7 @@
   }
   
   .tarjeta {
-    background-color: rgba(134, 56, 56, 0.9);
+    background-color: #863838e6;
     color: white;
     width: 38%;
     height: auto;
@@ -33,11 +33,9 @@
   }
   
   .biografia {
-    background-color: rgba(134, 56, 56, 0.9);
     color: white;
     width: auto;
     height: auto;
-    padding: 32px 32px 32px 32px;
     margin: 0px 32px 32px 32px;
     border: 1px solid orange;
     overflow: hidden;
@@ -98,12 +96,9 @@
   }
   
   .clubes {
-    background-color: rgba(134, 56, 56, 0.9);
     color: white;
     width: auto;
     height: auto;
-    padding: 32px 32px 32px 32px;
-    margin: 0px 32px 32px 32px;
     border: 1px solid orange;
     display: flex;
     flex-direction: column;

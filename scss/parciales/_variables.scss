@@ -1,0 +1,47 @@
+$estilos: (
+  color: #863838e6,
+  centro: center,
+  tFuente: 20px,
+  rem : 2rem,
+  margen: 0px 20px 0px 20px,
+);
+
+.biografia {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, rem);
+  font-size:map-get($estilos, tFuente);
+  margin: map-get($estilos, margen);
+}
+
+.clubes {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, rem);
+  font-size:map-get($estilos, tFuente);
+  margin: map-get($estilos, margen);
+}
+
+.table {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, rem);
+  font-size:map-get($estilos, tFuente);
+  margin: map-get($estilos, margen);
+}
+
+.galeria {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, rem);
+  font-size:map-get($estilos, tFuente);
+  margin: map-get($estilos, margen);
+}
+
+.contacto {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+  margin: map-get($estilos, margen);
+}
