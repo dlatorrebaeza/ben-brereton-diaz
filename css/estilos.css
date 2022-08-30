@@ -1324,7 +1324,7 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    bottom: 0%;
+    bottom: 0;
     border: none;
     border-top: 1px solid orange;
     position: static;
@@ -1336,11 +1336,11 @@ input[type="radio"] {
   }
   .footer__ul {
     color: black;
-    font-size: 9.7px;
+    font-size: 9.25px;
     font-style: normal;
     font-weight: bold;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1;
+    line-height: 1.2;
     align-items: center;
   }
   .footer__ul--li {
