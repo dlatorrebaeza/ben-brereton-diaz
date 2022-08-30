@@ -1,31 +1,40 @@
 
+  .main_index {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .card {
     background-color: rgba(134, 56, 56, 0.9);
     color: white;
-    width: 50%;
+    width: auto;
     height: auto;
     padding: 16px 32px 32px 32px;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px 20px 30px;
     border: 1px solid orange;
-    overflow: none;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     justify-content: center;
-    align-items: center;
+    align-content: space-around;
+    border-radius: 10px;
     position: static;
+    text-align: center;
     animation: fadein;
     animation-duration: 2s;
 
+    &__conjunto {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
     &__imagen {
-      width: 100%;
+      width: 48%;
       height: auto;
       border: 1px solid orange;
       border-radius: 10px;
       margin-top: 10px;
       margin-bottom: 0;
-      display: flex;
-      justify-self: center;
     }
     
     &__titulo {
@@ -34,7 +43,7 @@
       font-style: normal;
       font-weight: bold;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 50px;
+      font-size: 65px;
       margin-top: 0;
       margin-bottom: 25px;
       line-height: 1.5;
@@ -43,7 +52,7 @@
     
     &__parrafo {
       text-align: justify;
-      font-size: 18px;
+      font-size: 25px;
       color: whitesmoke;
       font-style: normal;
       font-weight: normal;
